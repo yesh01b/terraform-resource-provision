@@ -17,83 +17,83 @@ variable "env" {
 }
 
 
-## Virtual Network
+# ## Virtual Network
 
-variable "virtual_network_name" {
-  type    = string
-  default = "vnet-dev"
-}
-variable "address_space" {
-  type    = list(string)
-  default = ["10.0.0.0/24"]
-}
+# variable "virtual_network_name" {
+#   type    = string
+#   default = "vnet-dev"
+# }
+# variable "address_space" {
+#   type    = list(string)
+#   default = ["10.0.0.0/24"]
+# }
 
-## Subnet
+# ## Subnet
 
-variable "subnet_name" {
-  type    = string
-  default = "snet-dev"
-}
+# variable "subnet_name" {
+#   type    = string
+#   default = "snet-dev"
+# }
 
-variable "address_prefixes" {
-  type    = list(string)
-  default = ["10.0.0.0/26"]
-}
+# variable "address_prefixes" {
+#   type    = list(string)
+#   default = ["10.0.0.0/26"]
+# }
 
-## Network Interface - Virtual machine
+# ## Network Interface - Virtual machine
 
-variable "nic_name" {
-  type    = string
-  default = "nic-dev"
-}
+# variable "nic_name" {
+#   type    = string
+#   default = "nic-dev"
+# }
 
-variable "private_ip_address_allocation" {
-  type    = string
-  default = "Dynamic"
-}
+# variable "private_ip_address_allocation" {
+#   type    = string
+#   default = "Dynamic"
+# }
 
-## Virtual Machine
+# ## Virtual Machine
 
-variable "vm_name" {
-  type    = string
-  default = "vmdev01"
-}
-variable "admin_username" {
-  type    = string
-  default = "vmadminuser"
-}
+# variable "vm_name" {
+#   type    = string
+#   default = "vmdev01"
+# }
+# variable "admin_username" {
+#   type    = string
+#   default = "vmadminuser"
+# }
 
-variable "admin_password" {
-  type    = string
-  default = "123456789A@"
-}
+# variable "admin_password" {
+#   type    = string
+#   default = "123456789A@"
+# }
 
-variable "size" {
-  type    = string
-  default = "Standard_DS1_v2"
-}
+# variable "size" {
+#   type    = string
+#   default = "Standard_DS1_v2"
+# }
 
-variable "storage_account_type" {
-  type    = string
-  default = "Standard_LRS"
-}
+# variable "storage_account_type" {
+#   type    = string
+#   default = "Standard_LRS"
+# }
 
-variable "caching" {
-  type    = string
-  default = "ReadWrite"
-}
+# variable "caching" {
+#   type    = string
+#   default = "ReadWrite"
+# }
 
-variable "publisher" {
-  type    = string
-  default = "MicrosoftWindowsServer"
-}
+# variable "publisher" {
+#   type    = string
+#   default = "MicrosoftWindowsServer"
+# }
 
-variable "offer" {
-  type    = string
-  default = "WindowsServer"
-}
+# variable "offer" {
+#   type    = string
+#   default = "WindowsServer"
+# }
 
-variable "sku" {
-  type    = string
-  default = "2019-DataCenter"
-}
+# variable "sku" {
+#   type    = string
+#   default = "2019-DataCenter"
+# }

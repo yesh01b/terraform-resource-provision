@@ -1,0 +1,16 @@
+tirgger: none
+pr: none
+
+stages:
+  - stage: PlanDev
+    displayName: 'PlanDev'
+    jobs:
+      - job: PlanDev
+        displayName: 'PlanDev'
+        pool:
+          vmImage: 'windows-latest'
+        steps:
+          - checkout: self
+            clean: true
+          
+          

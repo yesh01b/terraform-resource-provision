@@ -12,5 +12,9 @@ stages:
         steps:
           - checkout: self
             clean: true
-          
+          - task: TerraformInstaller@1
+            displayName: Install Terraform 1.9.6
+            inputs:
+              terraformVersion: 1.9.6
+
           
